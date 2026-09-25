@@ -1,0 +1,10 @@
+count app = COUNT(GooglePlayStore_dataset[App])
+
+Highly Rated Apps =
+CALCULATE(
+    DISTINCTCOUNT(GooglePlayStore[App]),
+    GooglePlayStore[Rating] >= 4.5
+)
+
+Number of Apps = DISTINCTCOUNT(GooglePlayStore_dataset[App])
+
